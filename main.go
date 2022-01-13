@@ -18,10 +18,10 @@ func main() {
 		fmt.Println("skip setting static pages related configuration")
 	}
 
-	fmt.Println("---- delete start ----")
-	deleteErrs := operation.DeleteObjects(config.Bucket)
-	utils.LogErrors(deleteErrs)
-	fmt.Println("---- delete end ----")
+// 	fmt.Println("---- delete start ----")
+// 	deleteErrs := operation.DeleteObjects(config.Bucket)
+// 	utils.LogErrors(deleteErrs)
+// 	fmt.Println("---- delete end ----")
 
 	records := utils.WalkDir(config.Folder)
 
